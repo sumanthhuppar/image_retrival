@@ -1,38 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.bar{
+.bar {
     width: 100%;
     height: 10px;
-    
     background-color: #138065;
 }
 
-body{
+body {
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-h1{
+h1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin: 40px 0 60px 0 ;
+    margin: 40px 0 60px 0;
 }
 
-form{
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
 }
 
-#search-input{
+#search-input {
     width: 60%;
     max-width: 400px;
     padding: 10px 20px;
@@ -41,10 +41,9 @@ form{
     border-radius: 5px;
     font-size: 18px;
     color: #333;
-
 }
 
-#search-button{
+#search-button {
     padding: 10px 20px;
     background-color: #138065;
     color: white;
@@ -56,7 +55,7 @@ form{
     cursor: pointer;
 }
 
-.search-results{
+.search-results {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -64,8 +63,8 @@ form{
     margin: 0 auto;
 }
 
-.search-result{
-    margin-bottom:60px ;
+.search-result {
+    margin-bottom: 60px;
     width: 30%;
     height: 100%;
     border-radius: 5px;
@@ -73,18 +72,18 @@ form{
     overflow: hidden;
 }
 
-.search-result img{
+.search-result img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: opacity 0.2s ease-in-out;
 }
 
-.search-result:hover img{
+.search-result:hover img {
     opacity: 0.8;
 }
 
-.search-result a{
+.search-result a {
     font-size: 20px;
     text-decoration: none;
     color: #333;
@@ -93,7 +92,7 @@ form{
     text-transform: capitalize;
 }
 
-#show-more-button{
+#show-more-button {
     padding: 10px 20px;
     background-color: #138065;
     color: white;
@@ -109,17 +108,60 @@ form{
     display: none;
 }
 
-@media screen and (max-width: 768px){
-    .search-results{
+@media screen and (max-width: 768px) {
+    .search-results {
         padding: 20px;
     }
-    .search-result{
+
+    .search-result {
         width: 45%;
     }
 }
 
-@media screen and (max-width: 480px){
-    .search-result{
+@media screen and (max-width: 480px) {
+    .search-result {
         width: 100%;
     }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 2.5vw;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: abc 10s 0s infinite; 
+}
+@keyframes abc {
+0%{
+    background-color: rebeccapurple;
+
+}    
+30%{
+    background-color: rgb(25, 62, 136);
+
+}
+65%{
+    background-color: rgb(15, 105, 150);
+
+}
+98%{
+    background-color: rebeccapurple;
+
+}
+}
+footer h1 {
+    font-size: .82vw;
+    margin: 0;
+    text-align: center;
+}
+footer h2 {
+    position: absolute;
+    font-size: .65vw;
+    margin-left:10vw ;
+    right:2%;
 }
