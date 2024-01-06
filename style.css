@@ -157,11 +157,19 @@ footer {
 footer h1 {
     font-size: .82vw;
     margin: 0;
+    padding: 10px 0px 0px 0px;
     text-align: center;
 }
 footer h2 {
     position: absolute;
     font-size: .65vw;
-    margin-left:10vw ;
-    right:2%;
+    /* margin-left:10vw ; */
+    /* right:2%; */
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
 }
