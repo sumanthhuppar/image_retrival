@@ -1,3 +1,3 @@
 * API used - Unsplash
 
-deployment url - https://sumanthhuppar.github.io/image_retrival/
+demo - https://sumanthhuppar.github.io/image_retrival/
